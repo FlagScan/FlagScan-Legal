@@ -3,105 +3,198 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy – Flag Scan</title>
+<title>Flag Scan Privacy Policy</title>
 <style>
   :root {
     --bg: #ffffff;
-    --text: #1d2433;
-    --muted: #5d6676;
-    --accent: #1f4fa3;
-    --rule: #dde1e8;
+    --text: #1d1f23;
+    --muted: #5b6168;
+    --link: #1a5fd0;
+    --rule: #dcdfe3;
+    --panel: #f3f5f8;
+    --note-bg: #fff6d6;
+    color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #12161f;
-      --text: #e6e9ef;
-      --muted: #9aa3b2;
-      --accent: #7fa8ee;
-      --rule: #2a3140;
+      --bg: #17181b;
+      --text: #e8e9eb;
+      --muted: #9aa0a8;
+      --link: #81b0ff;
+      --rule: #34373c;
+      --panel: #212327;
+      --note-bg: #3a3314;
+      color-scheme: dark;
     }
   }
-  * { box-sizing: border-box; }
+  html { background: var(--bg); }
   body {
-    margin: 0;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    max-width: 720px;
     background: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
     line-height: 1.65;
-    font-size: 1.0625rem;
   }
-  main {
-    max-width: 42rem;
-    margin: 0 auto;
-    padding: 3rem 1.25rem 4rem;
-  }
-  h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin: 0 0 0.25rem;
-  }
-  .updated {
-    color: var(--muted);
-    margin: 0 0 2rem;
-    font-size: 0.95rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-    margin: 2.25rem 0 0.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--rule);
-  }
-  p { margin: 0 0 1rem; }
-  ul { margin: 0 0 1rem; padding-left: 1.4rem; }
-  li { margin-bottom: 0.35rem; }
-  a { color: var(--accent); }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.25rem; margin: 2.2em 0 0.4em; padding-top: 0.8em; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1.05rem; margin: 1.5em 0 0.2em; }
+  p, ul { margin: 0.7em 0; }
+  li { margin: 0.35em 0; }
+  a { color: var(--link); }
+  .meta { color: var(--muted); margin: 0 0 1.5em; }
+  .panel { background: var(--panel); padding: 4px 18px 10px; border-radius: 8px; margin: 1.5em 0; }
+  .panel h2 { border-top: none; margin-top: 0.9em; padding-top: 0; }
+  .note { background: var(--note-bg); padding: 12px 16px; border-radius: 6px; font-size: 0.95rem; }
+  .table-wrap { overflow-x: auto; margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 0.95rem; line-height: 1.5; }
+  th, td { border: 1px solid var(--rule); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
 </style>
 </head>
 <body>
-<main>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 16, 2026</p>
 
-  <p>This Privacy Policy explains what information the Flag Scan app ("the App") collects, how it is used, and the choices you have. [Your Name or Company] ("we", "us") operates the App.</p>
+<h1>Privacy Policy</h1>
+<p class="meta">Flag Scan &middot; Effective October 16, 2026</p>
 
-  <h2>1. Information We Collect</h2>
-  <p><strong>Account information:</strong> If you create an account, we collect your email address and, if provided, your name. Authentication and account data are handled by our backend provider, Supabase.</p>
-  <p><strong>Camera and photos:</strong> With your permission, the App accesses your camera and photo library so you can scan and save flag images. [Describe whether images are processed only on your device or uploaded to a server.]</p>
-  <p><strong>Usage and scan data:</strong> We store information such as your daily scan count and Pro subscription status.</p>
-  <p><strong>Advertising data:</strong> The free version shows ads from third-party ad partners, who may collect device identifiers and usage information (such as your advertising ID) to show and measure ads.</p>
-  <p><strong>Purchase information:</strong> Subscriptions are processed by Apple or Google. We receive confirmation of your subscription status but not your payment details.</p>
+<p>This Privacy Policy describes how Seismic Systems Inc. (“we”, “us”, “our”) collects, uses, stores, and shares information when you use the Flag Scan mobile application (the “App”). It also explains the choices and rights you have. By using the App, you acknowledge the practices described in this policy. If you do not agree with them, please do not use the App.</p>
 
-  <h2>2. How We Use Information</h2>
+<div class="panel">
+  <h2>Summary</h2>
   <ul>
-    <li>To provide and maintain the App and your account</li>
-    <li>To enforce daily scan limits and verify Pro access</li>
-    <li>To show ads in the free version</li>
-    <li>To fix bugs, improve the App, and respond to support requests</li>
+    <li>The photos you scan are <strong>never uploaded</strong> to our servers. Flag identification runs entirely on your device.</li>
+    <li>If you create an account, we store your email address and a sign-in credential, plus references to your recent scans.</li>
+    <li>The free version shows ads from Google AdMob. You can also choose to watch optional ads to earn extra scans.</li>
+    <li>Flag Scan Pro is a paid subscription. Payments are handled by Apple or Google, and subscription status is managed by RevenueCat. We never see your payment card details.</li>
+    <li>We do not sell your personal information for money.</li>
+    <li>You can ask us to delete your account and data at any time.</li>
   </ul>
+</div>
 
-  <h2>3. Sharing of Information</h2>
-  <p>We do not sell your personal information. We share data only with service providers needed to run the App, including Supabase (account and data storage), advertising partners (ads), and Apple or Google (subscriptions). We may also disclose information if required by law.</p>
+<h2>1. Information we collect</h2>
 
-  <h2>4. Permissions</h2>
-  <p>Camera and photo access are optional and can be turned off at any time in the App's Settings or your device settings. Some features will not work without them.</p>
+<h3>1.1 Information you provide</h3>
+<p><strong>Account information.</strong> When you create an account, we collect your email address and a password. We may also receive a display name if you provide one or if your sign-in method supplies it. Passwords are handled by our authentication provider, Supabase Auth, which stores them only in hashed (one-way encrypted) form. We cannot see or recover your password.</p>
 
-  <h2>5. Data Retention and Deletion</h2>
-  <p>We keep your account data while your account is active. You can request deletion of your account and associated data at any time by contacting us at the email below, or through the App if that option is available.</p>
+<p><strong>Support communications.</strong> If you contact us, we receive your email address and the contents of your message.</p>
 
-  <h2>6. Security</h2>
-  <p>We use reasonable measures to protect your information, but no method of storage or transmission is completely secure.</p>
+<h3>1.2 Photos and camera</h3>
+<p>The App can use your device camera and photo library, but only if you grant permission in the App or in your device settings. When you scan an image, it is analyzed by an image classification model that runs locally on your device to identify the flag. <strong>The image itself is not uploaded to, transmitted to, or stored on our servers or any server we control.</strong></p>
+<p>To power the “recent scans” feature, we store a reference (a link or identifier) that points to the photo in your device’s photo library. We do not store a copy of the photo. If you delete or move the original photo on your device, the reference may stop working. You can turn camera and photo permissions off at any time, and doing so does not delete your account.</p>
 
-  <h2>7. Children's Privacy</h2>
-  <p>The App is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us information, contact us and we will delete it.</p>
+<h3>1.3 Subscription and purchase information</h3>
+<p>If you subscribe to Flag Scan Pro, the purchase is processed by Apple’s App Store or Google Play, which collect and hold your payment details. We use RevenueCat, a subscription management service, to verify purchases and determine whether your Pro entitlement is active. RevenueCat receives purchase and subscription information, such as the product you purchased, purchase and renewal dates, subscription status, and an app user identifier. We do not receive or store your credit card number or other payment instrument details.</p>
 
-  <h2>8. Your Rights</h2>
-  <p>Depending on where you live, you may have the right to access, correct, or delete your personal information, or to withdraw consent. Contact us to make a request.</p>
+<h3>1.4 Advertising and device information</h3>
+<p>The free version of the App shows banner and small display ads, and optional rewarded ads that you can watch to earn additional scans. These ads are provided by Google AdMob. AdMob may collect and use information such as your device’s advertising identifier, IP address, device and operating system details, app interactions, and ad performance data to deliver, personalize, measure, and prevent fraud in advertising. Subscribers to Flag Scan Pro do not see ads. You can learn more in <a href="https://policies.google.com/technologies/partner-sites">Google’s explanation of how it uses data from apps that use its services</a> and in <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
 
-  <h2>9. Changes to This Policy</h2>
-  <p>We may update this policy from time to time. The "Last updated" date above shows the latest version.</p>
+<h3>1.5 Information stored on your device</h3>
+<p>The App uses your device’s local storage (AsyncStorage) to save data such as your recent scans, your display name, your settings (for example dark mode and permission toggles), a cached copy of basic account details, and your Pro subscription status. We do this to make the App load faster, avoid visual flicker, and allow certain features to work offline. This data remains on your device. It is removed when you sign out, clear the App’s data, or uninstall the App.</p>
 
-  <h2>10. Contact</h2>
-  <p>Questions or requests: <a href="mailto:your-support-email@example.com">your-support-email@example.com</a></p>
-</main>
+<h3>1.6 Information we do not collect</h3>
+<p>We do not collect your precise location, contacts, microphone recordings, or the images you scan. We do not knowingly collect sensitive personal information.</p>
+
+<h2>2. How we use information</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Purpose</th><th>Information used</th></tr></thead>
+  <tbody>
+    <tr><td>Create and secure your account, and keep you signed in</td><td>Email, credentials, display name</td></tr>
+    <tr><td>Provide the App’s features, including recent scans</td><td>Scan references, locally cached data</td></tr>
+    <tr><td>Provide and verify Flag Scan Pro, including offline access</td><td>Subscription status, app user identifier</td></tr>
+    <tr><td>Show ads and grant extra scans for rewarded ads</td><td>Advertising identifier, device data (processed by AdMob)</td></tr>
+    <tr><td>Respond to support requests</td><td>Email address, message content</td></tr>
+    <tr><td>Maintain security, prevent abuse, and fix problems</td><td>Account data, device and usage information</td></tr>
+    <tr><td>Comply with legal obligations</td><td>As required by law</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>3. Pro offline access</h2>
+<p>Flag Scan Pro can continue to work without an internet connection for up to three (3) days after the App last verified your subscription. To make this possible, your Pro status and the time of the last check are stored on your device. After three days without a connection, Pro features are disabled until the App reconnects to our servers and verifies your subscription again.</p>
+
+<h2>4. Legal bases for processing (EEA, UK, and similar regions)</h2>
+<p>If you are in the European Economic Area, the United Kingdom, or another region with similar laws, we process your personal data on the following bases:</p>
+<ul>
+  <li><strong>Contract:</strong> to create your account and provide the App and Pro features you request.</li>
+  <li><strong>Consent:</strong> for access to your camera and photos, and for personalized advertising and the use of advertising identifiers where consent is required. You can withdraw consent at any time in your device settings or in the App’s consent options, without affecting processing done before withdrawal.</li>
+  <li><strong>Legitimate interests:</strong> to keep the App secure, prevent fraud and abuse, and improve reliability, where these interests are not overridden by your rights.</li>
+  <li><strong>Legal obligation:</strong> to comply with applicable law.</li>
+</ul>
+
+<h2>5. How we share information</h2>
+<p>We do not sell your personal information for money. We share information only as described below.</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Recipient</th><th>Role</th><th>What they receive</th></tr></thead>
+  <tbody>
+    <tr><td>Supabase</td><td>Authentication, database hosting (service provider)</td><td>Email, hashed credentials, scan references</td></tr>
+    <tr><td>RevenueCat</td><td>Subscription management (service provider)</td><td>Purchase and subscription data, app user identifier</td></tr>
+    <tr><td>Apple App Store / Google Play</td><td>Payment processing and app distribution</td><td>Payment details you give them, purchase records</td></tr>
+    <tr><td>Google AdMob</td><td>Advertising (independent controller for its own advertising purposes)</td><td>Advertising identifier, device and interaction data</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>We may also disclose information (a) to comply with law, legal process, or a lawful government request; (b) to enforce our Terms of Use; (c) to protect the rights, safety, and property of our users, us, or others; and (d) in connection with a merger, acquisition, financing, or sale of assets, in which case we will require the recipient to honor this policy or give you notice of any material change.</p>
+
+<h2>6. Advertising choices</h2>
+<ul>
+  <li><strong>Ad personalization:</strong> where required by law (for example in the EEA and UK), we present a consent prompt before showing personalized ads. You may be able to change your choice later through the App.</li>
+  <li><strong>Device controls:</strong> on iOS, you can control tracking in Settings &gt; Privacy &amp; Security &gt; Tracking. On Android, you can reset your advertising ID or opt out of ads personalization in Settings &gt; Privacy &gt; Ads.</li>
+  <li><strong>Remove ads:</strong> subscribing to Flag Scan Pro removes advertising from the App.</li>
+</ul>
+<p>Opting out of personalized ads does not remove ads; the ads you see will simply be less relevant.</p>
+
+<h2>7. Data retention</h2>
+<ul>
+  <li><strong>Account data and scan references:</strong> kept while your account is active. When you request deletion, we delete or de-identify them within 30 days, except where we must keep certain records to meet legal obligations or resolve disputes.</li>
+  <li><strong>Subscription records:</strong> RevenueCat, Apple, and Google may keep purchase records for as long as their own policies and legal obligations require.</li>
+  <li><strong>On-device data:</strong> kept until you sign out, clear the App’s data, or uninstall the App.</li>
+  <li><strong>Advertising data:</strong> retained by Google under its own policies.</li>
+</ul>
+
+<h2>8. Your rights and choices</h2>
+<p>You can:</p>
+<ul>
+  <li><strong>Access and correct</strong> your account information through the Account screen or by contacting us.</li>
+  <li><strong>Delete</strong> your account and associated data by emailing us at the address below, [or through the “Delete account” option in the App]. Deleting the App from your device does not delete your account.</li>
+  <li><strong>Revoke permissions</strong> for camera and photos in the App’s Settings or your device settings.</li>
+  <li><strong>Cancel your subscription</strong> through your Apple or Google account. We cannot cancel it for you.</li>
+</ul>
+
+<h3>Additional rights for EEA, UK, and similar regions</h3>
+<p>You may have the right to access your personal data and receive a copy of it, to have inaccurate data corrected, to have your data erased, to restrict or object to processing, to data portability, and to withdraw consent. You also have the right to lodge a complaint with your local data protection authority.</p>
+
+<h3>Additional information for US state residents</h3>
+<p>Depending on where you live (for example California, Colorado, Connecticut, Virginia, and other states with comprehensive privacy laws), you may have the right to know what personal information we collect and how we use it, to request access to or deletion of it, to correct inaccurate information, and to opt out of the sale or sharing of personal information for targeted advertising. We do not sell personal information for money. Some uses of advertising identifiers by ad partners may be considered “sharing” or “targeted advertising” under certain state laws. You can opt out through the device and in-App controls described in Section 6, or by contacting us. We will not discriminate against you for exercising your rights. You may use an authorized agent to make a request on your behalf, and we may need to verify your identity before acting on a request. If we deny a request, you may be able to appeal by replying to our response.</p>
+
+<p>To exercise any right, email us at the address in Section 13. We will respond within the time required by applicable law.</p>
+
+<h2>9. Security</h2>
+<p>We use reasonable technical and organizational measures to protect personal information, including encrypted connections (HTTPS/TLS) to our servers, hashed password storage, and access controls on our database. No system is completely secure, and we cannot guarantee absolute security. You are responsible for choosing a strong password and keeping it confidential. If a data breach affects your information, we will notify you and the relevant authorities as required by law.</p>
+
+<h2>10. International data transfers</h2>
+<p>Our service providers may process and store information in countries other than your own, including the United States, which may have different data protection laws. Where required, we rely on appropriate safeguards for these transfers, such as the European Commission’s Standard Contractual Clauses or equivalent mechanisms put in place by our providers.</p>
+
+<h2>11. Children’s privacy</h2>
+<p>Flag Scan is not directed to children under 13 (or the higher minimum age required in your country), and we do not knowingly collect personal information from them. If you believe a child has given us personal information, contact us and we will delete it promptly.</p>
+
+<h2>12. Third-party services</h2>
+<p>The App may contain ads and links to services that we do not operate. We are not responsible for the privacy practices of those third parties, and we encourage you to review their policies. Relevant policies include those of <a href="https://supabase.com/privacy">Supabase</a>, <a href="https://www.revenuecat.com/privacy">RevenueCat</a>, <a href="https://policies.google.com/privacy">Google</a>, and <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+<h2>13. Contact us</h2>
+<p>For questions, requests, or complaints about this policy or our handling of your data, contact:</p>
+<p>Seismic Systems Inc.<br>
+Email: <a href="mailto:[YOUR EMAIL]">FlagScan@protonmail.com</a></p>
+
+<h2>14. Changes to this policy</h2>
+<p>We may update this policy from time to time to reflect changes in the App, our providers, or the law. The effective date at the top shows when it was last revised. If we make material changes, we will provide notice in the App or by email before they take effect where required. Your continued use of the App after an update means you accept the revised policy.</p>
+
+<p class="note">Template notice (delete before publishing): replace the items in [BRACKETS]. Keep this policy consistent with your App Store privacy labels and Google Play Data Safety form. Do not remove the consent or deletion statements unless the App actually behaves differently.</p>
+
 </body>
 </html>
